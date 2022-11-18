@@ -5,7 +5,7 @@ import styles from './../../styles/Home.module.css';
 import bg from '../../public/images/header-bg.jpg';
 import useWindowSize from '../hooks/useWindowSize';
 
-
+// Note: Dummy market-places data for render.
 const MARKET_PLACES = [
   {
     name: 'openSea',
@@ -87,10 +87,7 @@ export default function Home() {
 
       <main>
         <div className={styles.header} style={{
-          backgroundImage: `url(${bg.src})`,
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'left 48px bottom 0'
+          backgroundImage: `url(${bg.src})`
         }}>
           <Image
             className={styles.headerLogo}

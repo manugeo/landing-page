@@ -11,13 +11,15 @@ const Card = (prop: { market: Market, index: number }) => {
 
   return (
     <div className={styles.container}>
-      <Image
-        className={styles.headerImage}
-        src={`/images/card-banner-${name}.jpg`}
-        height={(width >= 800) ? 500 : 183}
-        width={(width >= 800) ? 890 : 325}
-        alt={`${name}-banner`}
-      />
+      <div className={styles.header}>
+        <Image
+          className={styles.headerImage}
+          src={`/images/card-banner-${name}.jpg`}
+          height={(width >= 800) ? 500 : 183}
+          width={(width >= 800) ? 890 : 325}
+          alt={`${name}-banner`}
+        />
+      </div>
       <div className={styles.content}>
         <div className={styles.titleRow}>
           <h1>{`${index + 1}.`}</h1>
